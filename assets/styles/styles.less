@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Inter Variable';
-    src: url('OpenSans-Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @color-gray: #5f5f61;
 @color-orange: #d74736;
@@ -52,10 +49,45 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
         header {
             width: 70%;
             img {
                 width: 100%;
+                margin-bottom: 2vw;
+            }
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                h1 {
+                    font-size: @font-size + 2.5;
+                    font-weight: 800;
+                    width: 40%;
+                }
+                div {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    p {
+                        color: @color-gray;
+                        font-weight: 400;
+                        line-height: @font-size + .7;
+                    }
+                    a {
+                        background-color: @color-blue;
+                        color: @color-white;
+                        width: 50%;
+                        padding: 14px;
+                        text-align: center;
+                        letter-spacing: 3px;
+                        font-weight: 400;
+                    }
+                    a:hover {
+                        background-color: #d74736;
+                        transition-duration: 400ms;
+                    }
+                }
             }
         }
 
@@ -75,6 +107,10 @@ main {
                     color: @color-white;
                     font-size: @font-size + .1;
                     margin: 18px 0 8px;
+                }
+                a:hover {
+                    color: @color-yellow;
+                    transition-duration: 400ms;
                 }
                 p {
                     color: @color-white * .7;
